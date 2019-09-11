@@ -37,6 +37,9 @@ Created on Wed Aug 21 16:39:18 2019
 #love6(4, 5) → False
 #love6(1, 5) → True
 
+
+
+
 "S5.4"
 #You and your date are trying to get a table at a restaurant. The parameter "you" is the 
 #stylishness of your clothes, in the range 0..10, and "date" is the stylishness of your 
@@ -46,6 +49,7 @@ Created on Wed Aug 21 16:39:18 2019
 #date_fashion(5, 10) → 2
 #date_fashion(5, 2) → 0
 #date_fashion(5, 5) → 1
+
 
 
 

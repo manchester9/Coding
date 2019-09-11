@@ -53,6 +53,18 @@ count_code('cozexxcope')
 #count_hi('abc hi ho') → 1
 #count_hi('ABChi hi') → 2
 #count_hi('hihi') → 2
+def count_hi(str):
+  count = 0
+  for i in range(len(str)-1):
+    if str[i:i+2] == 'hi':
+      count += 1
+  return count
+
+print(
+count_hi('abc hi ho'),
+count_hi('ABChi hi'),
+count_hi('hihi')
+)
 
 
 "S7.4"
@@ -62,7 +74,17 @@ count_code('cozexxcope')
 #end_other('Hiabc', 'abc') → True
 #end_other('AbC', 'HiaBc') → True
 #end_other('abc', 'abXabc') → True
+def end_other(a, b):
+  a = a.lower()
+  b = b.lower()
+  return (b.endswith(a) or a.endswith(b))
+#   return a[-(len(b)):] == b or a == b[-(len(a)):] 
 
+print(
+end_other('Hiabc', 'abc'),
+end_other('AbC', 'HiaBc'),
+end_other('abc', 'abXabc')
+)
 
 
 "S7.5"
@@ -70,7 +92,22 @@ count_code('cozexxcope')
 #cat_dog('catdog') → True
 #cat_dog('catcat') → False
 #cat_dog('1cat1cadodog') → True
+def cat_dog(str):
+  count_cat = 0
+  count_dog = 0
+  for i in range(len(str)-2):
+    if str[i:i+3] == 'dog':
+      count_dog += 1
+    if str[i:i+3] == 'cat':
+      count_cat += 1
+   
+  return count_cat == count_dog
 
+print(
+cat_dog('catdog'),
+cat_dog('catcat'),
+cat_dog('1cat1cadodog')
+)
 
 
 "S7.6"
@@ -80,25 +117,16 @@ count_code('cozexxcope')
 #xyz_there('abc.xyz') → False
 #xyz_there('xyz.abc') → True
 
+def xyz_there(str):
+  for i in range(len(str)):
+    if str[i] != '.' and str[i+1:i+4] == 'xyz':
+      return True
+  if str[0:3] == 'xyz':
+    return True
+  return False
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(
+xyz_there('abcxyz'),
+xyz_there('abc.xyz'),
+xyz_there('xyz.abc')
+)

@@ -12,6 +12,18 @@ Created on Wed Aug 21 16:39:18 2019
 #count_evens([2, 1, 2, 3, 4]) → 3
 #count_evens([2, 2, 0]) → 3
 #count_evens([1, 3, 5]) → 0
+def count_evens(nums):
+  count = 0
+  for element in nums:
+    if element % 2 == 0:
+      count += 1
+  return count
+
+print(
+count_evens([2, 1, 2, 3, 4]),
+count_evens([2, 2, 0]),
+count_evens([1, 3, 5])
+)
 
 
 "S8.2"
@@ -34,6 +46,7 @@ def sum13(nums):
 
 sum13([1, 2, 2, 1, 13, 100, 1, 3])
 
+
 "S8.3"
 #Given an array length 1 or more of ints, return the difference between the largest and smallest values 
 #in the array. Note: the built-in min(v1, v2) and max(v1, v2) functions return the smaller or larger 
@@ -49,6 +62,7 @@ def big_diff(nums):
     return diff
 
 big_diff([2, 10, 7, 2])
+
 
 "S8.4"
 #Return the sum of the numbers in the array, except ignore sections of numbers starting with a 6 and 
@@ -79,9 +93,17 @@ sum67([1, 1, 6, 7, 2])
 #centered_average([1, 2, 3, 4, 100]) → 3
 #centered_average([1, 1, 5, 5, 10, 8, 7]) → 5
 #centered_average([-10, -4, -2, -4, -2, 0]) → -3
+def centered_average(nums):
+  sum = 0
+  for element in nums:
+    sum += element
+  return (sum - min(nums) - max(nums)) / (len(nums)-2) 
 
-
-
+print(
+centered_average([1, 2, 3, 4, 100]),
+centered_average([1, 1, 5, 5, 10, 8, 7]),
+centered_average([-10, -4, -2, -4, -2, 0])
+)
 
 
 "S8.6"
@@ -89,9 +111,18 @@ sum67([1, 1, 6, 7, 2])
 #has22([1, 2, 2]) → True
 #has22([1, 2, 1, 2]) → False
 #has22([2, 1, 2]) → False
+def has22(nums):
+  for i in range(0, len(nums)-1):
+    #if nums[i] == 2 and nums[i+1] == 2:
+    if nums[i:i+2] == [2,2]:
+      return True    
+  return False
 
-
-
+print(
+has22([1, 2, 2]),
+has22([1, 2, 1, 2]),
+has22([2, 1, 2])
+)
 
 
 
