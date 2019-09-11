@@ -14,8 +14,18 @@ Created on Wed Aug 21 16:39:18 2019
 #cigar_party(30, False) → False
 #cigar_party(50, False) → True
 #cigar_party(70, True) → True
-
-
+def cigar_party(cigars, weekend):
+  if weekend:
+    return (cigars >= 40)
+  else:
+    return (cigars >= 40 and cigars <= 60)
+        
+print(
+cigar_party(30, False),
+cigar_party(50, False),
+cigar_party(70, True)
+)
+    
 
 "S5.2"
 #You are driving a little too fast, and a police officer stops you. Write code to compute the 
@@ -26,7 +36,20 @@ Created on Wed Aug 21 16:39:18 2019
 #caught_speeding(60, False) → 0
 #caught_speeding(65, False) → 1
 #caught_speeding(65, True) → 0
+def caught_speeding(speed, birthday):
+  if birthday:
+    speed -= 5
+  if speed <= 60:
+      return 0
+  if 60 < speed <= 80:
+    return 1
+  return 2
 
+print(
+caught_speeding(60, False),
+caught_speeding(65, False),
+caught_speeding(65, True)
+)
 
 
 "S5.3"
@@ -36,8 +59,14 @@ Created on Wed Aug 21 16:39:18 2019
 #love6(6, 4) → True
 #love6(4, 5) → False
 #love6(1, 5) → True
+def love6(a, b):
+  return a == 6 or b == 6 or (a + b) == 6 or abs(a - b) == 6
 
-
+print(
+love6(6, 4),
+love6(4, 5),
+love6(1, 5)
+)
 
 
 "S5.4"
@@ -49,8 +78,18 @@ Created on Wed Aug 21 16:39:18 2019
 #date_fashion(5, 10) → 2
 #date_fashion(5, 2) → 0
 #date_fashion(5, 5) → 1
+def date_fashion(you, date):
+  if you <= 2 or date <= 2:
+    return 0
+  if you >= 8 or date >= 8:
+    return 2
+  return 1
 
-
+print(
+date_fashion(5, 10),
+date_fashion(5, 2),
+date_fashion(5, 5)
+)
 
 
 "S5.5"
@@ -59,7 +98,16 @@ Created on Wed Aug 21 16:39:18 2019
 #sorta_sum(3, 4) → 7
 #sorta_sum(9, 4) → 20
 #sorta_sum(10, 11) → 21
+def sorta_sum(a, b):
+  if 10 <= a + b < 20:
+    return 20
+  return a + b
 
+print(
+sorta_sum(3, 4),
+sorta_sum(9, 4),
+sorta_sum(10, 11)
+)
 
 
 "S5.6"
@@ -68,6 +116,17 @@ Created on Wed Aug 21 16:39:18 2019
 #in1to10(5, False) → True
 #in1to10(11, False) → False
 #in1to10(11, True) → True
+def in1to10(n, outside_mode):
+  if not outside_mode:
+    return n in range(1, 11)
+  return n <= 1 or n >= 10
+
+print(
+in1to10(5, False),
+in1to10(11, False),
+in1to10(11, True)
+)
+
 
 "S5.7"
 #The squirrels in Palo Alto spend most of the day playing. In particular, they play if the temperature is 
@@ -76,8 +135,16 @@ Created on Wed Aug 21 16:39:18 2019
 #squirrel_play(70, False) → True
 #squirrel_play(95, False) → False
 #squirrel_play(95, True) → True
+def squirrel_play(temp, is_summer):
+  if is_summer:
+    return 60 <= temp <= 100
+  return 60 <= temp <= 90
 
-
+print(
+squirrel_play(70, False),
+squirrel_play(95, False),
+squirrel_play(95, True)
+)
 
 
 "S5.8"
@@ -88,7 +155,21 @@ Created on Wed Aug 21 16:39:18 2019
 #alarm_clock(1, False) → '7:00'
 #alarm_clock(5, False) → '7:00'
 #alarm_clock(0, False) → '10:00'
+def alarm_clock(day, vacation):
+  if not vacation:
+    if 1 <= day <= 5:
+      return '7:00'
+    return '10:00'
+  
+  if 1 <= day <= 5:
+    return '10:00'
+  return 'off'
 
+print(
+alarm_clock(1, False),
+alarm_clock(5, False),
+alarm_clock(0, False)
+)
 
 
 "S5.9"
@@ -97,9 +178,15 @@ Created on Wed Aug 21 16:39:18 2019
 #near_ten(12) → True
 #near_ten(17) → False
 #near_ten(19) → True
+def near_ten(num):
+ # return 0 <= (num % 10) <= 2 or 8 <= (num % 10) <= 10
+ return num % 10 in [0,1,2,8,9,10]
 
-
-
+print(
+near_ten(12),
+near_ten(17),
+near_ten(19)
+)
 
 
 
