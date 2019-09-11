@@ -14,7 +14,17 @@ Created on Wed Aug 21 16:39:18 2019
 #make_bricks(3, 1, 8) → True
 #make_bricks(3, 1, 9) → False
 #make_bricks(3, 2, 10) → True
+def make_bricks(sb, bb, goal):
+    if goal <= (sb*1 + bb*5):
+        return True
+    else:
+        return False
 
+print(
+make_bricks(3, 1, 8), 
+make_bricks(3, 1, 9), 
+make_bricks(3, 2, 10)
+)
 
 
 "S6.2"
@@ -27,9 +37,20 @@ Created on Wed Aug 21 16:39:18 2019
 #no_teen_sum(1, 2, 3) → 6
 #no_teen_sum(2, 13, 1) → 3
 #no_teen_sum(2, 1, 14) → 3
+def no_teen_sum(a, b, c):
+  return fix_teen(a) + fix_teen(b) + fix_teen(c)
+ 
+def fix_teen(n):
+  #if 13 <= n <= 14 or 17 <= n <= 19:
+  if n in [13, 14, 17, 18, 19]:
+    return 0
+  return n
 
-
-
+print(
+no_teen_sum(1, 2, 3),
+no_teen_sum(2, 13, 1),
+no_teen_sum(2, 1, 14) 
+)
 
 
 "S6.3"
@@ -39,8 +60,22 @@ Created on Wed Aug 21 16:39:18 2019
 #make_chocolate(4, 1, 9) → 4
 #make_chocolate(4, 1, 10) → -1
 #make_chocolate(4, 1, 7) → 2
+def make_chocolate(small, big, goal):
+  maxBig = goal / 5
+   
+  if big >= maxBig:
+    if small >= (goal - maxBig * 5):
+      return goal - maxBig * 5
+  if big < maxBig:
+    if small >= (goal - big * 5):
+      return goal - big * 5
+  return -1
 
-
+print(
+make_chocolate(4, 1, 9),
+make_chocolate(4, 1, 10),
+make_chocolate(4, 1, 7)
+)
 
 "S6.4"
 #Given 3 int values, a b c, return their sum. However, if one of the values is the same as 
@@ -48,7 +83,22 @@ Created on Wed Aug 21 16:39:18 2019
 #lone_sum(1, 2, 3) → 6
 #lone_sum(3, 2, 3) → 2
 #lone_sum(3, 3, 3) → 0
+def lone_sum(a, b, c):
+  if a == b == c:
+    return 0
+  if b == c:
+    return a
+  if a == c:
+    return b
+  if a == b:
+    return c  
+  return a + b + c
 
+print(
+lone_sum(1, 2, 3),
+lone_sum(3, 2, 3),
+lone_sum(3, 3, 3)
+)
 
 
 "S6.5"
@@ -60,7 +110,19 @@ Created on Wed Aug 21 16:39:18 2019
 #round_sum(16, 17, 18) → 60
 #round_sum(12, 13, 14) → 30
 #round_sum(6, 4, 4) → 10
+def round_sum(a, b, c):
+  return round10(a) + round10(b) + round10(c)
+ 
+def round10(n):
+  if n % 10 >= 5:
+    return n + 10 - (n % 10)
+  return n - (n % 10)  
 
+print(
+round_sum(16, 17, 18),
+round_sum(12, 13, 14),
+round_sum(6, 4, 4)
+)
 
 
 "S6.6"
@@ -70,8 +132,20 @@ Created on Wed Aug 21 16:39:18 2019
 #lucky_sum(1, 2, 3) → 6
 #lucky_sum(1, 2, 13) → 3
 #lucky_sum(1, 13, 3) → 1
+def lucky_sum(a, b, c):
+  if a == 13:
+    return 0
+  if b == 13:
+    return a
+  if c == 13:
+    return a + b
+  return a + b + c
 
-
+print(
+lucky_sum(1, 2, 3),
+lucky_sum(1, 2, 13),
+lucky_sum(1, 13, 3)
+)
 
 
 "S6.7"
@@ -81,15 +155,13 @@ Created on Wed Aug 21 16:39:18 2019
 #close_far(1, 2, 10) → True
 #close_far(1, 2, 3) → False
 #close_far(4, 1, 3) → True
+def close_far(a, b, c):
+  cond1 = abs(a-b) <= 1 and abs(b-c) >=2 and abs(a-c) >= 2
+  cond2 = abs(a-c) <= 1 and abs(a-b) >=2 and abs(c-b) >= 2
+  return cond1 or cond2
 
-
-
-
-
-
-
-
-
-
-
-
+print(
+close_far(1, 2, 10),
+close_far(1, 2, 3), 
+close_far(4, 1, 3) 
+)
