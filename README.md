@@ -4,7 +4,7 @@
 </p>
 
 ## **Overview**
-This repo contains programming langauges, coding exercises, courses, and hackathons that have helped me in my Programming journey. This is more so to document my learning experience along the way. If the organization of content helps someone else in their Programming journey then even better.
+This repo contains programming langauges, coding exercises, courses, hackathons, and modules that have helped me in my Programming journey. This is more so to document my learning experience along the way. If the organization of content helps someone else in their Programming journey then even better.
 
 # **Table Of Contents**
 
@@ -21,4 +21,8 @@ This repo contains programming langauges, coding exercises, courses, and hackath
 
 
 ### **Hackathons**
+1. [TBD]()
+
+
+### **Modules**
 1. [TBD]()
