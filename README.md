@@ -8,15 +8,15 @@ This repo contains programming langauges, coding exercises, courses, hackathons,
 
 # **Table Of Contents**
 
-### **Programming Languages**
-1. [TBD]()
-
-
 ### **Coding exercises**
 1. [TBD]()
 
 
 ### **Courses**
+1. [TBD]()
+
+
+### **Programming Languages**
 1. [TBD]()
 
 
