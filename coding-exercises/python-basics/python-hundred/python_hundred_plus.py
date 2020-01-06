@@ -582,7 +582,7 @@ for i in reverse(100):
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+# Solution:
 import math
 pos = [0,0]
 while True:
@@ -603,7 +603,7 @@ while True:
     else:
         pass
 
-print int(round(math.sqrt(pos[1]**2+pos[0]**2)))
+print(int(round(math.sqrt(pos[1]**2+pos[0]**2))))
 #----------------------------------------#
 
 #----------------------------------------#
@@ -630,7 +630,7 @@ print int(round(math.sqrt(pos[1]**2+pos[0]**2)))
 # Hints
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+# Solution:
 freq = {}   # frequency of words in text
 line = raw_input()
 for word in line.split():
@@ -640,7 +640,7 @@ words = freq.keys()
 words.sort()
 
 for w in words:
-    print "%s:%d" % (w,freq[w])
+    print("%s:%d" % (w,freq[w]))
 #----------------------------------------#
 
 #----------------------------------------#
@@ -653,12 +653,12 @@ for w in words:
 # Hints:
 #     Using the ** operator
 
-Solution:
+# Solution:
 def square(num):
     return num ** 2
 
-print square(2)
-print square(3)
+print(square(2))
+print(square(3))
 #----------------------------------------#
 
 #----------------------------------------#
@@ -673,10 +673,10 @@ print square(3)
 # Hints:
 #     The built-in document method is __doc__
 
-Solution:
-print abs.__doc__
-print int.__doc__
-print raw_input.__doc__
+# Solution:
+print(abs.__doc__)
+print(int.__doc__)
+print(raw_input.__doc__)
 
 def square(num):
     '''Return the square value of the input number.
@@ -685,8 +685,8 @@ def square(num):
     '''
     return num ** 2
 
-print square(2)
-print square.__doc__
+print(square(2))
+print(square.__doc__)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -700,7 +700,7 @@ print square.__doc__
 #     Define a instance parameter, need add it in __init__ method
 #     You can init a object with construct parameter or set the value later
 
-Solution:
+# Solution:
 class Person:
     # Define the class parameter "name"
     name = "Person"
@@ -710,11 +710,11 @@ class Person:
         self.name = name
 
 jeffrey = Person("Jeffrey")
-print "%s name is %s" % (Person.name, jeffrey.name)
+print("%s name is %s" % (Person.name, jeffrey.name))
 
 nico = Person()
 nico.name = "Nico"
-print "%s name is %s" % (Person.name, nico.name)
+print("%s name is %s" % (Person.name, nico.name)) 
 #----------------------------------------#
 
 #----------------------------------------#
@@ -724,11 +724,11 @@ print "%s name is %s" % (Person.name, nico.name)
 # Hints:
 # Define a function with two numbers as arguments. You can compute the sum in the function and return the value.
 
-Solution
+# Solution
 def SumFunction(number1, number2):
 	return number1+number2
 
-print SumFunction(1,2)
+print(SumFunction(1,2))
 
 #----------------------------------------#
 # Question:
@@ -738,13 +738,12 @@ print SumFunction(1,2)
 
 # Use str() to convert a number to string.
 
-Solution
+# Solution
 def printValue(n):
-	print str(n)
+	print(str(n))
 
 printValue(3)
 	
-
 #----------------------------------------#
 # Question:
 # Define a function that can convert a integer into a string and print it in console.
@@ -753,23 +752,23 @@ printValue(3)
 
 # Use str() to convert a number to string.
 
-Solution
+# Solution
 def printValue(n):
-	print str(n)
+	print(str(n))
 
 printValue(3)
 
 #----------------------------------------#
-2.10
+# 2.10
 
-Question:
-Define a function that can receive two integral numbers in string form and compute their sum and then print it in console.
+# Question:
+# Define a function that can receive two integral numbers in string form and compute their sum and then print it in console.
 
-Hints:
+# Hints:
 
-Use int() to convert a string to integer.
+# Use int() to convert a string to integer.
 
-Solution
+# Solution
 def printValue(s1,s2):
 	print int(s1)+int(s2)
 
@@ -777,7 +776,7 @@ printValue("3","4") #7
 
 
 #----------------------------------------#
-2.10
+# 2.10
 
 
 # Question:
@@ -787,14 +786,14 @@ printValue("3","4") #7
 
 # Use + to concatenate the strings
 
-Solution
+# Solution
 def printValue(s1,s2):
-	print s1+s2
+	print(s1+s2)
 
 printValue("3","4") #34
 
 #----------------------------------------#
-2.10
+# 2.10
 
 
 # Question:
@@ -804,25 +803,24 @@ printValue("3","4") #34
 
 # Use len() function to get the length of a string
 
-Solution
+# Solution
 def printValue(s1,s2):
 	len1 = len(s1)
 	len2 = len(s2)
 	if len1>len2:
-		print s1
+		print(s1)
 	elif len2>len1:
-		print s2
+		print(s2)
 	else:
-		print s1
-		print s2
-		
+		print(s1)
+		print(s2)		
 
 printValue("one","three")
 
 
 
 #----------------------------------------#
-2.10
+# 2.10
 
 # Question:
 # Define a function that can accept an integer number as input and print the "It is an even number" if the number is even, otherwise print "It is an odd number".
@@ -834,16 +832,14 @@ printValue("one","three")
 Solution
 def checkValue(n):
 	if n%2 == 0:
-		print "It is an even number"
+		print("It is an even number")
 	else:
-		print "It is an odd number"
-		
+		print("It is an odd number") 
 
 checkValue(7)
 
-
 #----------------------------------------#
-2.10
+# 2.10
 
 # Question:
 # Define a function which can print a dictionary where the keys are numbers between 1 and 3 (both included) and the values are square of keys.
@@ -853,20 +849,15 @@ checkValue(7)
 # Use dict[key]=value pattern to put entry into a dictionary.
 # Use ** operator to get power of a number.
 
-Solution
+# Solution
 def printDict():
 	d=dict()
 	d[1]=1
 	d[2]=2**2
 	d[3]=3**2
-	print d
-		
+	print(d)
 
 printDict()
-
-
-
-
 
 #----------------------------------------#
 # 2.10
@@ -880,16 +871,15 @@ printDict()
 # Use ** operator to get power of a number.
 # Use range() for loops.
 
-Solution
+# Solution
 def printDict():
 	d=dict()
 	for i in range(1,21):
 		d[i]=i**2
-	print d
+	print(d)
 		
 
 printDict()
-
 
 #----------------------------------------#
 # 2.10
@@ -904,13 +894,13 @@ printDict()
 # Use range() for loops.
 # Use keys() to iterate keys in the dictionary. Also we can use item() to get key/value pairs.
 
-Solution
+# Solution
 def printDict():
 	d=dict()
 	for i in range(1,21):
 		d[i]=i**2
 	for (k,v) in d.items():	
-		print v
+		print(v)
 		
 
 printDict()
@@ -928,15 +918,14 @@ printDict()
 # Use range() for loops.
 # Use keys() to iterate keys in the dictionary. Also we can use item() to get key/value pairs.
 
-Solution
+# Solution
 def printDict():
 	d=dict()
 	for i in range(1,21):
 		d[i]=i**2
 	for k in d.keys():	
-		print k
+		print(k)
 		
-
 printDict()
 
 
@@ -952,12 +941,12 @@ printDict()
 # Use range() for loops.
 # Use list.append() to add values into a list.
 
-Solution
+# Solution
 def printList():
 	li=list()
 	for i in range(1,21):
 		li.append(i**2)
-	print li
+	print(li)
 		
 
 printList()
@@ -975,16 +964,14 @@ printList()
 # Use list.append() to add values into a list.
 # Use [n1:n2] to slice a list
 
-Solution
+# Solution
 def printList():
 	li=list()
 	for i in range(1,21):
 		li.append(i**2)
-	print li[:5]
+	print(li[:5])
 		
-
 printList()
-
 
 #----------------------------------------#
 # 2.10
@@ -999,16 +986,14 @@ printList()
 # Use list.append() to add values into a list.
 # Use [n1:n2] to slice a list
 
-Solution
+# Solution
 def printList():
 	li=list()
 	for i in range(1,21):
 		li.append(i**2)
-	print li[-5:]
+	print(li[-5:])
 		
-
 printList()
-
 
 #----------------------------------------#
 # 2.10
@@ -1023,16 +1008,15 @@ printList()
 # Use list.append() to add values into a list.
 # Use [n1:n2] to slice a list
 
-Solution
+# Solution
 def printList():
 	li=list()
 	for i in range(1,21):
 		li.append(i**2)
-	print li[5:]
+	print(li[5:])
 		
 
 printList()
-
 
 #----------------------------------------#
 # 2.10
@@ -1047,15 +1031,14 @@ printList()
 # Use list.append() to add values into a list.
 # Use tuple() to get a tuple from a list.
 
-Solution
+# Solution
 def printTuple():
 	li=list()
 	for i in range(1,21):
 		li.append(i**2)
-	print tuple(li)
+	print(tuple(li))
 		
 printTuple()
-
 
 
 #----------------------------------------#
@@ -1068,13 +1051,12 @@ printTuple()
 
 # Use [n1:n2] notation to get a slice from a tuple.
 
-Solution
+# Solution
 tp=(1,2,3,4,5,6,7,8,9,10)
 tp1=tp[:5]
 tp2=tp[5:]
-print tp1
-print tp2
-
+print(tp1)
+print(tp2)
 
 #----------------------------------------#
 # 2.10
@@ -1087,7 +1069,7 @@ print tp2
 # Use "for" to iterate the tuple
 # Use tuple() to generate a tuple from a list.
 
-Solution
+# Solution
 tp=(1,2,3,4,5,6,7,8,9,10)
 li=list()
 for i in tp:
@@ -1095,9 +1077,7 @@ for i in tp:
 		li.append(tp[i])
 
 tp2=tuple(li)
-print tp2
-
-
+print(tp2)
 
 #----------------------------------------#
 # 2.14
@@ -1109,13 +1089,12 @@ print tp2
 
 # Use if statement to judge condition.
 
-Solution
-s= raw_input()
+# Solution
+s= input()
 if s=="yes" or s=="YES" or s=="Yes":
-    print "Yes"
+    print("Yes")
 else:
-    print "No"
-
+    print("No")
 
 
 #----------------------------------------#
@@ -1129,10 +1108,10 @@ else:
 # Use filter() to filter some elements in a list.
 # Use lambda to define anonymous functions.
 
-Solution
+# Solution
 li = [1,2,3,4,5,6,7,8,9,10]
 evenNumbers = filter(lambda x: x%2==0, li)
-print evenNumbers
+print(evenNumbers)
 
 
 #----------------------------------------#
@@ -1146,10 +1125,10 @@ print evenNumbers
 # Use map() to generate a list.
 # Use lambda to define anonymous functions.
 
-Solution
+# Solution
 li = [1,2,3,4,5,6,7,8,9,10]
 squaredNumbers = map(lambda x: x**2, li)
-print squaredNumbers
+print(squaredNumbers)
 
 #----------------------------------------#
 # 3.5
@@ -1163,12 +1142,10 @@ print squaredNumbers
 # Use filter() to filter elements of a list.
 # Use lambda to define anonymous functions.
 
-Solution
+# Solution
 li = [1,2,3,4,5,6,7,8,9,10]
 evenNumbers = map(lambda x: x**2, filter(lambda x: x%2==0, li))
-print evenNumbers
-
-
+print(evenNumbers)
 
 
 #----------------------------------------#
@@ -1182,9 +1159,9 @@ print evenNumbers
 # Use filter() to filter elements of a list.
 # Use lambda to define anonymous functions.
 
-Solution
+# Solution
 evenNumbers = filter(lambda x: x%2==0, range(1,21))
-print evenNumbers
+print(evenNumbers)
 
 
 #----------------------------------------#
@@ -1198,11 +1175,9 @@ print evenNumbers
 # Use map() to generate a list.
 # Use lambda to define anonymous functions.
 
-Solution
+# Solution
 squaredNumbers = map(lambda x: x**2, range(1,21))
-print squaredNumbers
-
-
+print(squaredNumbers)
 
 
 #----------------------------------------#
@@ -1215,18 +1190,15 @@ print squaredNumbers
 
 # Use @staticmethod decorator to define class static method.
 
-Solution
+# Solution
 class American(object):
     @staticmethod
     def printNationality():
-        print "America"
+        print("America")
 
 anAmerican = American()
 anAmerican.printNationality()
 American.printNationality()
-
-
-
 
 #----------------------------------------#
 
@@ -1239,8 +1211,7 @@ American.printNationality()
 
 # Use class Subclass(ParentClass) to define a subclass.
 
-Solution:
-
+# Solution:
 class American(object):
     pass
 
@@ -1249,14 +1220,10 @@ class NewYorker(American):
 
 anAmerican = American()
 aNewYorker = NewYorker()
-print anAmerican
-print aNewYorker
-
-
-
+print(anAmerican)
+print(aNewYorker)
 
 #----------------------------------------#
-
 
 # 7.2
 
@@ -1267,8 +1234,7 @@ print aNewYorker
 
 # Use def methodName(self) to define a method.
 
-Solution:
-
+# Solution:
 class Circle(object):
     def __init__(self, r):
         self.radius = r
@@ -1277,8 +1243,7 @@ class Circle(object):
         return self.radius**2*3.14
 
 aCircle = Circle(2)
-print aCircle.area()
-
+print(aCircle.area())
 
 #----------------------------------------#
 
@@ -1290,8 +1255,7 @@ print aCircle.area()
 
 # Use def methodName(self) to define a method.
 
-Solution:
-
+# Solution:
 class Rectangle(object):
     def __init__(self, l, w):
         self.length = l
@@ -1301,8 +1265,7 @@ class Rectangle(object):
         return self.length*self.width
 
 aRectangle = Rectangle(2,10)
-print aRectangle.area()
-
+print(aRectangle.area())
 
 #----------------------------------------#
 
@@ -1314,8 +1277,7 @@ print aRectangle.area()
 
 # To override a method in super class, we can define a method with the same name in the super class.
 
-Solution:
-
+# Solution:
 class Shape(object):
     def __init__(self):
         pass
@@ -1332,11 +1294,10 @@ class Square(Shape):
         return self.length*self.length
 
 aSquare= Square(3)
-print aSquare.area()
+print(aSquare.area())
 
 
 #----------------------------------------#
-
 
 # Please raise a RuntimeError exception.
 
@@ -1344,10 +1305,9 @@ print aSquare.area()
 
 # Use raise() to raise an exception.
 
-Solution:
+# Solution:
 
 raise RuntimeError('something wrong')
-
 
 
 #----------------------------------------#
@@ -1357,7 +1317,7 @@ raise RuntimeError('something wrong')
 
 # Use try/except to catch exceptions.
 
-Solution:
+# Solution:
 
 def throws():
     return 5/0
@@ -1365,12 +1325,11 @@ def throws():
 try:
     throws()
 except ZeroDivisionError:
-    print "division by zero!"
-except Exception, err:
-    print 'Caught an exception'
+    print("division by zero!")
+except Exception as err:
+    print('Caught an exception') 
 finally:
-    print 'In finally block for cleanup'
-
+    print('In finally block for cleanup')
 
 #----------------------------------------#
 # Define a custom exception class which takes a string message as attribute.
@@ -1379,15 +1338,13 @@ finally:
 
 # To define a custom exception, we need to define a class inherited from Exception.
 
-Solution:
-
+# Solution:
 class MyError(Exception):
     """My own exception class
 
     Attributes:
         msg  -- explanation of the error
     """
-
     def __init__(self, msg):
         self.msg = msg
 
@@ -1413,13 +1370,12 @@ error = MyError("something wrong")
 
 # Use \w to match letters.
 
-Solution:
+# Solution:
 import re
-emailAddress = raw_input()
+emailAddress = input()
 pat2 = "(\w+)@((\w+\.)+(com))"
 r2 = re.match(pat2,emailAddress)
-print r2.group(1)
-
+print(r2.group(1))
 
 #----------------------------------------#
 # Question:
@@ -1441,15 +1397,12 @@ print r2.group(1)
 
 # Use \w to match letters.
 
-Solution:
+# Solution:
 import re
-emailAddress = raw_input()
+emailAddress = input()
 pat2 = "(\w+)@(\w+)\.(com)"
 r2 = re.match(pat2,emailAddress)
-print r2.group(2)
-
-
-
+print(r2.group(2))
 
 #----------------------------------------#
 # Question:
@@ -1471,11 +1424,10 @@ print r2.group(2)
 
 # Use re.findall() to find all substring using regex.
 
-Solution:
+# Solution:
 import re
-s = raw_input()
-print re.findall("\d+",s)
-
+s = input()
+print(re.findall("\d+",s))
 
 #----------------------------------------#
 # Question:
@@ -1487,10 +1439,10 @@ print re.findall("\d+",s)
 
 # Use u'strings' format to define unicode string.
 
-Solution:
+# Solution:
 
 unicodeString = u"hello world!"
-print unicodeString
+print(unicodeString)
 
 #----------------------------------------#
 # Write a program to read an ASCII string and to convert it to a unicode string encoded by utf-8.
@@ -1499,11 +1451,15 @@ print unicodeString
 
 # Use unicode() function to convert.
 
-Solution:
+# Solution:
 
-s = raw_input()
-u = unicode( s ,"utf-8")
-print u
+s = input()
+try:
+    u = unicode( s ,"utf-8")
+except NameError:
+    unicode = str
+
+print(u)
 
 #----------------------------------------#
 # Question:
@@ -1512,7 +1468,7 @@ print u
 
 # Hints:
 
-Solution:
+# Solution:
 
 # -*- coding: utf-8 -*-
 
@@ -1535,14 +1491,13 @@ Solution:
 # Hints:
 # Use float() to convert an integer to a float
 
-Solution:
+# Solution:
 
-n=int(raw_input())
+n=int(input())
 sum=0.0
 for i in range(1,n+1):
     sum += float(float(i)/(i+1))
-print sum
-
+print(sum)
 
 #----------------------------------------#
 # Question:
@@ -1568,7 +1523,7 @@ print sum
 # Hints:
 # We can define recursive function in Python.
 
-Solution:
+# Solution:
 
 def f(n):
     if n==0:
@@ -1576,8 +1531,8 @@ def f(n):
     else:
         return f(n-1)+100
 
-n=int(raw_input())
-print f(n)
+n=int(input())
+print(f(n))
 
 #----------------------------------------#
 
@@ -1608,15 +1563,15 @@ print f(n)
 # We can define recursive function in Python.
 
 
-Solution:
+# Solution:
 
 def f(n):
     if n == 0: return 0
     elif n == 1: return 1
     else: return f(n-1)+f(n-2)
 
-n=int(raw_input())
-print f(n)
+n=int(input())
+print(f(n))
 
 
 #----------------------------------------#
@@ -1651,16 +1606,16 @@ print f(n)
 
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+# Solution:
 
 def f(n):
     if n == 0: return 0
     elif n == 1: return 1
     else: return f(n-1)+f(n-2)
 
-n=int(raw_input())
+n=int(input())
 values = [str(f(x)) for x in range(0, n+1)]
-print ",".join(values)
+print(",".join(values))
 
 
 #----------------------------------------#
@@ -1683,8 +1638,7 @@ print ",".join(values)
 
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
-
+# Solution:
 def EvenGenerator(n):
     i=0
     while i<=n:
@@ -1693,13 +1647,12 @@ def EvenGenerator(n):
         i+=1
 
 
-n=int(raw_input())
+n=int(input())
 values = []
 for i in EvenGenerator(n):
     values.append(str(i))
 
-print ",".join(values)
-
+print(",".join(values))
 
 #----------------------------------------#
 
@@ -1721,20 +1674,19 @@ print ",".join(values)
 
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+# Solution:
 
 def NumGenerator(n):
     for i in range(n+1):
         if i%5==0 and i%7==0:
             yield i
 
-n=int(raw_input())
+n=int(input())
 values = []
 for i in NumGenerator(n):
     values.append(str(i))
 
-print ",".join(values)
-
+print(",".join(values))
 
 #----------------------------------------#
 
@@ -1743,18 +1695,14 @@ print ",".join(values)
 
 # Please write assert statements to verify that every number in the list [2,4,6,8] is even.
 
-
-
 # Hints:
 # Use "assert expression" to make assertion.
 
-
-Solution:
+# Solution:
 
 li = [2,4,6,8]
 for i in li:
     assert i%2==0
-
 
 #----------------------------------------#
 # Question:
@@ -1774,11 +1722,10 @@ for i in li:
 # Use eval() to evaluate an expression.
 
 
-Solution:
+# Solution:
 
-expression = raw_input()
-print eval(expression)
-
+expression = input()
+print(eval(expression))
 
 #----------------------------------------#
 # Question:
@@ -1790,7 +1737,7 @@ print eval(expression)
 # Use if/elif to deal with conditions.
 
 
-Solution:
+# Solution:
 
 import math
 def bin_search(li, element):
@@ -1809,10 +1756,8 @@ def bin_search(li, element):
     return index
 
 li=[2,5,7,9,11,17,222]
-print bin_search(li,11)
-print bin_search(li,12)
-
-
+print(bin_search(li,11))
+print(bin_search(li,12))
 
 
 #----------------------------------------#
@@ -1824,8 +1769,7 @@ print bin_search(li,12)
 # Hints:
 # Use if/elif to deal with conditions.
 
-
-Solution:
+# Solution:
 
 import math
 def bin_search(li, element):
@@ -1844,10 +1788,8 @@ def bin_search(li, element):
     return index
 
 li=[2,5,7,9,11,17,222]
-print bin_search(li,11)
-print bin_search(li,12)
-
-
+print(bin_search(li,11))
+print(bin_search(li,12))
 
 
 #----------------------------------------#
@@ -1855,49 +1797,41 @@ print bin_search(li,12)
 
 # Please generate a random float where the value is between 10 and 100 using Python math module.
 
-
-
 # Hints:
 # Use random.random() to generate a random float in [0,1].
 
-
-Solution:
+# Solution:
 
 import random
-print random.random()*100
+print(random.random()*100)
 
 #----------------------------------------#
 # Question:
 
 # Please generate a random float where the value is between 5 and 95 using Python math module.
 
-
-
 # Hints:
 # Use random.random() to generate a random float in [0,1].
 
-
-Solution:
+# Solution:
 
 import random
-print random.random()*100-5
-
+print(random.random()*100-5)
 
 #----------------------------------------#
-Question:
+# Question:
 
-Please write a program to output a random even number between 0 and 10 inclusive using random module and list comprehension.
-
-
-
-Hints:
-Use random.choice() to a random element from a list.
+# Please write a program to output a random even number between 0 and 10 inclusive using random module and list comprehension.
 
 
-Solution:
+# Hints:
+# Use random.choice() to a random element from a list.
+
+
+# Solution:
 
 import random
-print random.choice([i for i in range(11) if i%2==0])
+print(random.choice([i for i in range(11) if i%2==0]))
 
 
 #----------------------------------------#
@@ -1911,11 +1845,10 @@ print random.choice([i for i in range(11) if i%2==0])
 # Use random.choice() to a random element from a list.
 
 
-Solution:
+# Solution:
 
 import random
-print random.choice([i for i in range(201) if i%5==0 and i%7==0])
-
+print(random.choice([i for i in range(201) if i%5==0 and i%7==0]))
 
 
 #----------------------------------------#
@@ -1930,10 +1863,9 @@ print random.choice([i for i in range(201) if i%5==0 and i%7==0])
 # Use random.sample() to generate a list of random values.
 
 
-Solution:
-
+# Solution:
 import random
-print random.sample(range(100), 5)
+print(random.sample(range(100), 5))
 
 #----------------------------------------#
 # Question:
@@ -1946,10 +1878,9 @@ print random.sample(range(100), 5)
 # Use random.sample() to generate a list of random values.
 
 
-Solution:
-
+# Solution:
 import random
-print random.sample([i for i in range(100,201) if i%2==0], 5)
+print(random.sample([i for i in range(100,201) if i%2==0], 5))
 
 
 #----------------------------------------#
@@ -1963,10 +1894,10 @@ print random.sample([i for i in range(100,201) if i%2==0], 5)
 # Use random.sample() to generate a list of random values.
 
 
-Solution:
+# Solution:
 
 import random
-print random.sample([i for i in range(1,1001) if i%5==0 and i%7==0], 5)
+print(random.sample([i for i in range(1,1001) if i%5==0 and i%7==0], 5))
 
 #----------------------------------------#
 
@@ -1974,16 +1905,13 @@ print random.sample([i for i in range(1,1001) if i%5==0 and i%7==0], 5)
 
 # Please write a program to randomly print a integer number between 7 and 15 inclusive.
 
-
-
 # Hints:
 # Use random.randrange() to a random integer in a given range.
 
-
-Solution:
+# Solution:
 
 import random
-print random.randrange(7,16)
+print(random.randrange(7,16))
 
 #----------------------------------------#
 
@@ -1991,19 +1919,17 @@ print random.randrange(7,16)
 
 # Please write a program to compress and decompress the string "hello world!hello world!hello world!hello world!".
 
-
-
 # Hints:
 # Use zlib.compress() and zlib.decompress() to compress and decompress a string.
 
 
-Solution:
+# Solution:
 
 import zlib
 s = 'hello world!hello world!hello world!hello world!'
 t = zlib.compress(s)
-print t
-print zlib.decompress(t)
+print(t)
+print(zlib.decompress(t))
 
 #----------------------------------------#
 # Question:
@@ -2015,11 +1941,11 @@ print zlib.decompress(t)
 # Hints:
 # Use timeit() function to measure the running time.
 
-Solution:
+# Solution:
 
 from timeit import Timer
 t = Timer("for i in range(100):1+1")
-print t.timeit()
+print(t.timeit())
 
 #----------------------------------------#
 # Question:
