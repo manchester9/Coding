@@ -1,4 +1,3 @@
-
 #############################################
 #### 100+ Python challenging programming ####
 ##############################################
@@ -23,13 +22,13 @@
 # Hints: 
 # Consider use range(#begin, #end) method
 
-Solution:
+# Solution:
 l=[]
 for i in range(2000, 3201):
     if (i%7==0) and (i%5!=0):
         l.append(str(i))
 
-print ','.join(l)
+print(','.join(l))
 #----------------------------------------#
 
 #----------------------------------------#
@@ -47,14 +46,14 @@ print ','.join(l)
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+# Solution:
 def fact(x):
     if x == 0:
         return 1
     return x * fact(x - 1)
 
 x=int(raw_input())
-print fact(x)
+print(fact(x))
 #----------------------------------------#
 
 #----------------------------------------#
@@ -72,13 +71,13 @@ print fact(x)
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 # Consider use dict()
 
-Solution:
+# Solution:
 n=int(raw_input())
 d=dict()
 for i in range(1,n+1):
     d[i]=i*i
 
-print d
+print(d)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -97,12 +96,12 @@ print d
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 # tuple() method can convert list to tuple
 
-Solution:
+# Solution:
 values=raw_input()
 l=values.split(",")
 t=tuple(l)
-print l
-print t
+print(l)
+print(t)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -118,7 +117,7 @@ print t
 # Hints:
 # Use __init__ method to construct some parameters
 
-Solution:
+# Solution:
 class InputOutString(object):
     def __init__(self):
         self.s = ""
@@ -127,7 +126,7 @@ class InputOutString(object):
         self.s = raw_input()
 
     def printString(self):
-        print self.s.upper()
+        print(self.s.upper())
 
 strObj = InputOutString()
 strObj.getString()
@@ -154,7 +153,7 @@ strObj.printString()
 # If the output received is in decimal form, it should be rounded off to its nearest value (for example, if the output received is 26.0, it should be printed as 26)
 # In case of input data being supplied to the question, it should be assumed to be a console input. 
 
-Solution:
+# Solution:
 #!/usr/bin/env python
 import math
 c=50
@@ -164,12 +163,12 @@ items=[x for x in raw_input().split(',')]
 for d in items:
     value.append(str(int(round(math.sqrt(2*c*float(d)/h)))))
 
-print ','.join(value)
+print(','.join(value))
 #----------------------------------------#
 
 #----------------------------------------#
-Question 7
-Level 2
+# Question 7
+# Level 2
 
 # Question:
 # Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array. The element value in the i-th row and j-th column of the array should be i*j.
@@ -183,7 +182,7 @@ Level 2
 # Hints:
 # Note: In case of input data being supplied to the question, it should be assumed to be a console input in a comma-separated form.
 
-Solution:
+# Solution:
 input_str = raw_input()
 dimensions=[int(x) for x in input_str.split(',')]
 rowNum=dimensions[0]
@@ -194,7 +193,7 @@ for row in range(rowNum):
     for col in range(colNum):
         multilist[row][col]= row*col
 
-print multilist
+print(multilist)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -214,7 +213,7 @@ print multilist
 Solution:
 items=[x for x in raw_input().split(',')]
 items.sort()
-print ','.join(items)
+print(','.join(items)) 
 #----------------------------------------#
 
 #----------------------------------------#
@@ -233,7 +232,7 @@ print ','.join(items)
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+# Solution:
 lines = []
 while True:
     s = raw_input()
@@ -243,7 +242,7 @@ while True:
         break;
 
 for sentence in lines:
-    print sentence
+    print(sentence)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -261,10 +260,10 @@ for sentence in lines:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 # We use set container to remove duplicated data automatically and then use sorted() to sort the data.
 
-Solution:
+# Solution:
 s = raw_input()
 words = [word for word in s.split(" ")]
-print " ".join(sorted(list(set(words))))
+print(" ".join(sorted(list(set(words))))) 
 #----------------------------------------#
 
 #----------------------------------------#
@@ -282,7 +281,7 @@ print " ".join(sorted(list(set(words))))
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+# Solution:
 value = []
 items=[x for x in raw_input().split(',')]
 for p in items:
@@ -290,7 +289,7 @@ for p in items:
     if not intp%5:
         value.append(p)
 
-print ','.join(value)
+print(','.join(value)) 
 #----------------------------------------#
 
 #----------------------------------------#
@@ -304,13 +303,13 @@ print ','.join(value)
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+# Solution:
 values = []
 for i in range(1000, 3001):
     s = str(i)
     if (int(s[0])%2==0) and (int(s[1])%2==0) and (int(s[2])%2==0) and (int(s[3])%2==0):
         values.append(s)
-print ",".join(values)
+print(",".join(values)) 
 #----------------------------------------#
 
 #----------------------------------------#
@@ -328,7 +327,7 @@ print ",".join(values)
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+# Solution:
 s = raw_input()
 d={"DIGITS":0, "LETTERS":0}
 for c in s:
@@ -338,8 +337,8 @@ for c in s:
         d["LETTERS"]+=1
     else:
         pass
-print "LETTERS", d["LETTERS"]
-print "DIGITS", d["DIGITS"]
+print("LETTERS", d["LETTERS"])
+print("DIGITS", d["DIGITS"]) 
 #----------------------------------------#
 
 #----------------------------------------#
@@ -357,7 +356,7 @@ print "DIGITS", d["DIGITS"]
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+# Solution:
 s = raw_input()
 d={"UPPER CASE":0, "LOWER CASE":0}
 for c in s:
@@ -367,8 +366,8 @@ for c in s:
         d["LOWER CASE"]+=1
     else:
         pass
-print "UPPER CASE", d["UPPER CASE"]
-print "LOWER CASE", d["LOWER CASE"]
+print("UPPER CASE", d["UPPER CASE"]) 
+print("LOWER CASE", d["LOWER CASE"])
 #----------------------------------------#
 
 #----------------------------------------#
@@ -385,13 +384,13 @@ print "LOWER CASE", d["LOWER CASE"]
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+# Solution:
 a = raw_input()
 n1 = int( "%s" % a )
 n2 = int( "%s%s" % (a,a) )
 n3 = int( "%s%s%s" % (a,a,a) )
 n4 = int( "%s%s%s%s" % (a,a,a,a) )
-print n1+n2+n3+n4
+print(n1+n2+n3+n4)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -408,10 +407,10 @@ print n1+n2+n3+n4
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+# Solution:
 values = raw_input()
 numbers = [x for x in values.split(",") if int(x)%2!=0]
-print ",".join(numbers)
+print(",".join(numbers)) 
 #----------------------------------------#
 
 # Question 17
@@ -434,7 +433,7 @@ print ",".join(numbers)
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+# Solution:
 netAmount = 0
 while True:
     s = raw_input()
@@ -449,7 +448,7 @@ while True:
         netAmount-=amount
     else:
         pass
-print netAmount
+print(netAmount)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -475,7 +474,7 @@ print netAmount
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solutions:
+# Solutions:
 import re
 value = []
 items=[x for x in raw_input().split(',')]
@@ -497,7 +496,7 @@ for p in items:
     else:
         pass
     value.append(p)
-print ",".join(value)
+print(",".join(value)) 
 #----------------------------------------#
 
 #----------------------------------------#
@@ -523,7 +522,7 @@ print ",".join(value)
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 # We use itemgetter to enable multiple sort keys.
 
-Solutions:
+# Solutions:
 from operator import itemgetter, attrgetter
 
 l = []
@@ -533,7 +532,7 @@ while True:
         break
     l.append(tuple(s.split(",")))
 
-print sorted(l, key=itemgetter(0,1,2))
+print(sorted(l, key=itemgetter(0,1,2)))
 #----------------------------------------#
 
 #----------------------------------------#
@@ -546,7 +545,7 @@ print sorted(l, key=itemgetter(0,1,2))
 # Hints:
 # Consider use yield
 
-Solution:
+# Solution:
 def putNumbers(n):
     i = 0
     while i<n:
@@ -556,7 +555,7 @@ def putNumbers(n):
             yield j
 
 for i in reverse(100):
-    print i
+    print(i)
 #----------------------------------------#
 
 #----------------------------------------#
