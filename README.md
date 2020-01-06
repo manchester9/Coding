@@ -11,7 +11,11 @@ This repo contains coding exercises, courses, hackathons, and modules that have 
 # **Table Of Contents**
 
 ### **Coding exercises**
-1. [TBD]()
+1. [Python](https://github.com/manchester9/coding/tree/master/coding-exercises/python-basics)
+2. [Java](https://github.com/manchester9/coding/tree/master/coding-exercises/java-basics)
+3. [C++](https://github.com/manchester9/coding/tree/master/coding-exercises/c%2B%2B%20basics)
+4. [JavaScript](https://github.com/manchester9/coding/tree/master/coding-exercises/javascript-basics)
+5. [Scala](https://github.com/manchester9/coding/tree/master/coding-exercises/scala-basics)
 
 ### **Books**
 1. [TBD]()
