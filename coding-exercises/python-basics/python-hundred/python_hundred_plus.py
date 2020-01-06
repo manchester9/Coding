@@ -1957,12 +1957,12 @@ print(t.timeit())
 # Hints:
 # Use shuffle() function to shuffle a list.
 
-Solution:
+# Solution:
 
 from random import shuffle
 li = [3,6,7,8]
 shuffle(li)
-print li
+print(li)
 
 #----------------------------------------#
 # Question:
@@ -1974,13 +1974,12 @@ print li
 # Hints:
 # Use shuffle() function to shuffle a list.
 
-Solution:
+# Solution:
 
 from random import shuffle
 li = [3,6,7,8]
 shuffle(li)
-print li
-
+print(li)
 
 
 #----------------------------------------#
@@ -1991,7 +1990,7 @@ print li
 # Hints:
 # Use list[index] notation to get a element from a list.
 
-Solution:
+# Solution:
 
 subjects=["I", "You"]
 verbs=["Play", "Love"]
@@ -2000,7 +1999,7 @@ for i in range(len(subjects)):
     for j in range(len(verbs)):
         for k in range(len(objects)):
             sentence = "%s %s %s." % (subjects[i], verbs[j], objects[k])
-            print sentence
+            print(sentence)
 
 
 #----------------------------------------#
@@ -2009,11 +2008,10 @@ for i in range(len(subjects)):
 # Hints:
 # Use list comprehension to delete a bunch of element from a list.
 
-Solution:
-
+# Solution:
 li = [5,6,77,45,22,12,24]
 li = [x for x in li if x%2!=0]
-print li
+print(li)
 
 #----------------------------------------#
 # Question:
@@ -2023,11 +2021,10 @@ print li
 # Hints:
 # Use list comprehension to delete a bunch of element from a list.
 
-Solution:
-
+# Solution:
 li = [12,24,35,70,88,120,155]
 li = [x for x in li if x%5!=0 and x%7!=0]
-print li
+print(li) 
 
 
 #----------------------------------------#
@@ -2039,11 +2036,10 @@ print li
 # Use list comprehension to delete a bunch of element from a list.
 # Use enumerate() to get (index, value) tuple.
 
-Solution:
-
+# Solution:
 li = [12,24,35,70,88,120,155]
 li = [x for (i,x) in enumerate(li) if i%2!=0]
-print li
+print(li)
 
 #----------------------------------------#
 
@@ -2054,10 +2050,9 @@ print li
 # Hints:
 # Use list comprehension to make an array.
 
-Solution:
-
+# Solution:
 array = [[ [0 for col in range(8)] for col in range(5)] for row in range(3)]
-print array
+print(array)
 
 #----------------------------------------#
 # Question:
@@ -2068,13 +2063,10 @@ print array
 # Use list comprehension to delete a bunch of element from a list.
 # Use enumerate() to get (index, value) tuple.
 
-Solution:
-
+# Solution:
 li = [12,24,35,70,88,120,155]
 li = [x for (i,x) in enumerate(li) if i not in (0,4,5)]
-print li
-
-
+print(li)
 
 #----------------------------------------#
 
@@ -2085,11 +2077,11 @@ print li
 # Hints:
 # Use list's remove method to delete a value.
 
-Solution:
+# Solution:
 
 li = [12,24,35,24,88,120,155]
 li = [x for x in li if x!=24]
-print li
+print(li)
 
 
 #----------------------------------------#
@@ -2100,13 +2092,13 @@ print li
 # Hints:
 # Use set() and "&=" to do set intersection operation.
 
-Solution:
+# Solution:
 
 set1=set([1,3,6,78,35,55])
 set2=set([12,24,35,24,88,120,155])
 set1 &= set2
 li=list(set1)
-print li
+print(li)
 
 #----------------------------------------#
 
@@ -2115,7 +2107,7 @@ print li
 # Hints:
 # Use set() to store a number of values without duplicate.
 
-Solution:
+# Solution:
 
 def removeDuplicate( li ):
     newli=[]
@@ -2128,7 +2120,7 @@ def removeDuplicate( li ):
     return newli
 
 li=[12,24,35,24,88,120,155,88,120,155]
-print removeDuplicate(li)
+print(removeDuplicate(li))
 
 
 #----------------------------------------#
@@ -2139,8 +2131,7 @@ print removeDuplicate(li)
 # Hints:
 # Use Subclass(Parentclass) to define a child class.
 
-Solution:
-
+# Solution:
 class Person(object):
     def getGender( self ):
         return "Unknown"
@@ -2155,8 +2146,8 @@ class Female( Person ):
 
 aMale = Male()
 aFemale= Female()
-print aMale.getGender()
-print aFemale.getGender()
+print(aMale.getGender())
+print(aFemale.getGender())
 
 
 
@@ -2184,13 +2175,13 @@ print aFemale.getGender()
 # Use dict to store key/value pairs.
 # Use dict.get() method to lookup a key with default value.
 
-Solution:
+# Solution:
 
 dic = {}
-s=raw_input()
+s=input()
 for s in s:
     dic[s] = dic.get(s,0)+1
-print '\n'.join(['%s,%s' % (k, v) for k, v in dic.items()])
+print('\n'.join(['%s,%s' % (k, v) for k, v in dic.items()]))
 
 #----------------------------------------#
 
@@ -2210,11 +2201,11 @@ print '\n'.join(['%s,%s' % (k, v) for k, v in dic.items()])
 # Hints:
 # Use list[::-1] to iterate a list in a reverse order.
 
-Solution:
+# Solution:
 
-s=raw_input()
+s=input()
 s = s[::-1]
-print s
+print(s)
 
 #----------------------------------------#
 
@@ -2234,11 +2225,11 @@ print s
 # Hints:
 # Use list[::2] to iterate a list by step 2.
 
-Solution:
+# Solution:
 
-s=raw_input()
+s=input()
 s = s[::2]
-print s
+print(s)
 #----------------------------------------#
 
 
@@ -2250,10 +2241,10 @@ print s
 # Hints:
 # Use itertools.permutations() to get permutations of list.
 
-Solution:
+# Solution:
 
 import itertools
-print list(itertools.permutations([1,2,3]))
+print(list(itertools.permutations([1,2,3])))
 
 #----------------------------------------#
 # Question:
@@ -2264,8 +2255,7 @@ print list(itertools.permutations([1,2,3]))
 # Hint:
 # Use for loop to iterate all possible solutions.
 
-Solution:
-
+# Solution:
 def solve(numheads,numlegs):
     ns='No solutions!'
     for i in range(numheads+1):
@@ -2277,7 +2267,6 @@ def solve(numheads,numlegs):
 numheads=35
 numlegs=94
 solutions=solve(numheads,numlegs)
-print solutions
+print(solutions)
 
 #----------------------------------------#
-
