@@ -1,6 +1,6 @@
 package com.java;
 
-public class MultiThreading<Threads> extends Threads {
+public class MultiThreading {
     public void run(){
         System.out.println("My thread is in running state.");
     }
