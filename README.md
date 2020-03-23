@@ -18,7 +18,7 @@ This repo contains coding exercises, courses, hackathons, and modules that have 
 5. [Scala](https://github.com/manchester9/coding/tree/master/coding-exercises/scala-basics)
 
 ### **Books**
-1. [TBD]()
+1. [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_6?dchild=1&keywords=code&qid=1584929808&sr=8-6)
 
 ### **Courses**
 1. [TBD]()
