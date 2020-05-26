@@ -19,6 +19,7 @@ This repo contains coding exercises, courses, hackathons, nanodegrees, websites,
 
 ### **Books**
 1. [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_6?dchild=1&keywords=code&qid=1584929808&sr=8-6)
+2. [C programming language](https://www.amazon.com/Programming-Language-PROGRAMMING-LANG-_p2-ebook/dp/B009ZUZ9FW/ref=sr_1_3?crid=22PQ278S426M6&dchild=1&keywords=learn+c+the+hard+way&qid=1590500631&sprefix=learn+c+the+h%2Caps%2C161&sr=8-3)
 
 ### **Courses**
 1. [TBD]()
